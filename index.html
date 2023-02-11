@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Portfolio de Sergio Martín </title>
+        <!--Referencia a las fuentes de texto extraidas de Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+        <!--Referencia a Font Awesome-->
+        <script src="https://kit.fontawesome.com/6a8b3188b3.js" crossorigin="anonymous"></script>
+        <!--Referencia externa al fichero CSS-->
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+        <!--Bloque de HTML5 de navegación--> 
+        <nav>
+            <ul>
+                <li><a href="#sobremi">sobre mi</a></li> <!--href="#id" : Anclaje a una sección interna de la página-->
+                <li><a href="#portfolio">portfolio</a></li>
+                <li id="logo"><img src="./imagenes/cascos.png" alt="logo de cascos"></li>
+                <li><a href="#experiencia">skills</a></li>
+                <li><a href="#contactar">contactar</a></li>
+            </ul>
+        </nav>
+        <!--Fin bloque de navegación-->
+        <!--Bloque artículo de HTML5-->
+        <article>
+            <!--Bloque de inicio-->
+            <section id="inicio">
+                <h2>Sergio Martín Reizábal</h2>
+                <h3 class="hastag">#programador</h3>
+                <h3 class="hastag">#músico</h3>
+                <div>
+                    <ul id="redessociales">
+                        <li><a href="https://open.spotify.com/" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+                        <li><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sergio-mart%C3%ADn-reizábal-a2162a206/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/sergi.mare/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!--FIN Bloque de inicio-->
+            <!--Bloque sobre mí-->
+            <section id="sobremi">
+                <div id="imgsobremi">
+                    <img src="./imagenes/foto_250.png" alt="Foto Sergio Martín" height="250">
+                </div>
+                <div id="bodysobremi">
+                    <h2>Sobre mí</h2>
+                    <p>Soy <strong>Sergio Martín</strong> estudiante de 3° año de ingeniería informática con capacidad de aprender rápido y aplicar mis conocimientos al campo profesional. Capaz de trabajar en equipo y de forma independiente según las necesidades. En busca de una oportunidad laboral en la que desarrollar mis habilidades y adquirir experiencia.</p>
+                    <!--Si quiero un salto de línea se introduce un nuevo parrafo-->
+                    <!--spam se utiliza para posteriormente realizar un maquetado con CSS-->
+                    <p>Aunque sigo estudiando, me encanta aprender por mi cuenta todos los días cosas nuevas sobre el <span>desarrollo de software, inteligencia artificial, ciberseguridad o hardware</span>.</p>
+                    <p>Me defino como una persona creativa y enamorada de lo que hago, donde mi máxima es <cite>"el mundo es un aula maravillosa de aprendizaje continuo"</cite> .</p>
+                    <div class="masinfo"><button type="button">MAS INFO</button></div>
+                </div>
+            </section>
+            <!--FIN Bloque sobre mí-->
+            <!--Bloque portfolio-->
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <h3>Una mirada mas allá del texto</h3>
+                <div class="filaportfolio">
+                    <div class="card">
+                        <!--Incluimos un vídeo desde local-->
+                        <video controls width="250">
+                            <source src="./media/intro_mastermindv3.webm" type="video/webm">
+                            <source src="./media/intro_mastermindv2.mp4" type="video/mp4">
+                        </video>
+                        <h3>música</h3>
+                        <h4>concierto de benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>  
+                    </div>
+                    <div class="card">
+                        <!--Incluimos un vídeo desde enlace externo, etiqueta Iframe de youtube (compartir, insertar)-->
+                        <iframe width="250" src="https://www.youtube.com/embed/RhluxK3MYVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <h3>música</h3>
+                        <h4>concierto de benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>   
+                    </div>
+                    <div class="card">
+                        <img src="./imagenes/imagen_portfolio.png" alt="Portfolio 1">
+                        <h3>música</h3>
+                        <h4>concierto de benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>   
+                    </div>
+                    <div class="card">
+                        <img src="./imagenes/imagen_portfolio.png" alt="Portfolio 1">
+                        <h3>música</h3>
+                        <h4>concierto de benicassim</h4>
+                        <div class="sep"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="masinfo"><button type="button">MAS INFO</button></div>   
+                    </div>
+                </div>
+            </section>
+            <!--FIN Bloque portfolio-->
+            <!--Bloque experiencia-->
+            <section id="experiencia">
+                <h2>Experiencia & Skills</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <div class="gridexp">
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                    <div class="cardexp">
+                        <h2>Diseño web</h2>
+                        <h3 class="textoizquierda">2018-2020</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <ul>
+                            <li><img src="./imagenes/tecno_au.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_cu.png" alt="" height="30px"></li>
+                            <li><img src="./imagenes/tecno_html.png" alt="" height="30px"></li>
+                        </ul>
+                    </div>
+                </div>     
+            </section>
+            <!--Fin Bloque experiencia-->
+            <!--Bloque contactar-->
+            <section id="contactar">
+                <h2>Contacto</h2>
+                <h3>Envíame tus dudas</h3>
+                <form action="#"> <!--Formulario el parámetro acción recoge esa información gracias a tecnologías como JavaScript o PHP, pueden enviar un correo electrónico o bien almacenar la información en una base de datos-->
+                    <div class="itemform">
+                        <label for="nombre">Nombre</label> <!--Label etiqueta que aparece delante del input, HTML5 hace referencia a una eriqueta dentro de un formulario, el for está relacionado con el name del input-->
+                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required> <!--El atributo name se utiliza para recoger los datos con PHP o JavaScript, size el ancho de caracteres que muestra, en este caso 32 caracteres, required si no introduzco ningún dato salta aviso de rellenar campo obligatorio-->
+                    </div>
+                    <div class="itemform">
+                        <label for="empresa">Empresa</label> 
+                        <input type="text" id="empresa" name="empresa" minlength="2" maxlength="128" size="32"> 
+                    </div>
+                    <div class="itemform">
+                        <label for="email">Email</label> 
+                        <input type="email" id="email" name="email" minlength="10" maxlength="128" size="32" required> 
+                    </div>
+                    <div class="itemform">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="33" rows="5"></textarea> <!----> 
+                    </div>
+                    <div class="itemform">
+                        <input type="submit" name="enviar" value="CONTACTAR"> <!--Otra forma de desplegar un botón-->
+                    </div>
+                </form>
+            </section>
+            <!--Fin bloque contactar-->
+        </article>
+        <!--Fin de bloque de artículo-->
+        <!--Bloque pie de página HTML5-->
+        <footer>
+            <ul>
+                <li class="logo"><a href="#inicio"><img src="./imagenes/cascos.png" alt=""></a></li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+            </ul>
+        </footer>
+        <!--Fin bloque pie de página-->
+    </body>
+</html>
