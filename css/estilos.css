@@ -209,7 +209,7 @@ footer ul li{
 /*Card experiencia*/
 .gridexp{
     display: grid;
-    grid-template-columns: repeat(3,350px); /*3 columnas que se adapten automáticamente al espacio disponible (1fr)*/
+    grid-template-columns: repeat(2,350px); /*3 columnas que se adapten automáticamente al espacio disponible (1fr)*/
     grid-gap: 10px;
     justify-content: space-between;
     align-content: space-around; /*Alinea verticalmente el grid*/
